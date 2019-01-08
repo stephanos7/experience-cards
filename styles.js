@@ -51,15 +51,16 @@ export default StyleSheet.create({
   },
   cardList: {
     display: "flex",
-    paddingLeft: 35,
-    paddingRight: 35,
-    paddingTop: 50
+    paddingLeft: 30,
+    paddingRight: 30,
+    paddingBottom: 50,
+    paddingTop: 50,
   },
   card : {
     backgroundColor:  WHITE,
     borderRadius: 28,
     flex:1,
-    height:420,
+    height:440,
     marginBottom: 50,
     resizeMode:"cover",
     ...SHADOWS.vertical,
