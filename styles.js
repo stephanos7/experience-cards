@@ -29,10 +29,10 @@ export const SHADOWS = {
   vertical: {
     shadowColor: DAVYS_GREY,
     shadowOffset: {
-      width: 0, height: 15
+      width: 0, height: 13
     },
     shadowOpacity: 0.1,
-    shadowRadius: 5
+    shadowRadius: 7
   }
 }
 
@@ -51,19 +51,19 @@ export default StyleSheet.create({
   },
   cardList: {
     display: "flex",
-    paddingLeft: 50,
-    paddingRight: 50,
-    paddingTop: 20
+    paddingLeft: 35,
+    paddingRight: 35,
+    paddingTop: 50
   },
   card : {
-    display:"flex",
-    padding:25,
-    marginBottom: 50,
-    minHeight:370,
     backgroundColor:  WHITE,
     borderRadius: 28,
-    width: "100%",
-    ...SHADOWS.vertical
+    flex:1,
+    height:420,
+    marginBottom: 50,
+    resizeMode:"cover",
+    ...SHADOWS.vertical,
+    width:"100%"
   },
   choiceButton : {
     alignItems: "center",

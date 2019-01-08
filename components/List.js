@@ -6,7 +6,22 @@ import Card from "./Card";
 
 export default class List extends React.Component {
   state = {
-    data: [{name: "Breakfast"}, {name: "Lunch"}, {name: "Dinner"}, {name: "Spa"}]
+    data: [{
+      name: "Breakfast",
+      source: "https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    }, 
+    {
+      name: "Lunch",
+      source:"https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    }, 
+    {
+      name: "Dinner",
+      source:"https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    }, 
+    {
+      name: "Spa",
+      source:"https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    }]
   }
 
   _renderItem = dataItem => <Card {...dataItem} /> 
