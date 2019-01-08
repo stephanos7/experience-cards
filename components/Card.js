@@ -6,7 +6,7 @@ export default class Card extends React.Component{
   render(){
     return (
       <View style={styles.card}>
-        <Text>CARD</Text>
+        <Text>{JSON.stringify(this.props)}</Text>
       </View>
     )
   }
